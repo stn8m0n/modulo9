@@ -1,4 +1,11 @@
 $(document).ready(function() {
-    console.log(document.querySelector('header button'));
-    console.log($('#bt-cancelar'));
+    $('hearder button').click(function(){
+        alert("Expandir fomulário")
+    })
+
+    $('form').on('submit', function(e){
+        console.log("submit");
+        e.preventDefault();
+    })
+
 })
