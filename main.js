@@ -1,6 +1,10 @@
 $(document).ready(function() {
-    $('hearder button').click(function(){
-        alert("Expandir fomulário")
+    $('header button').click(function(){
+        $('form').slideDowm();
+    })
+
+    $('#bt-cancelar').click(function() {
+        $('form').slideUp();
     })
 
     $('form').on('submit', function(e){
