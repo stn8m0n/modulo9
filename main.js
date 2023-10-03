@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('header button').click(function(){
-        $('form').slideDowm();
+        $('form').slideDown();
     })
 
     $('#bt-cancelar').click(function() {
