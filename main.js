@@ -8,8 +8,9 @@ $(document).ready(function() {
     })
 
     $('form').on('submit', function(e){
-        console.log("submit");
         e.preventDefault();
+        const enderecoDaNovaImagem = $ ('endereço-imagem-nova').val();
+        console.log(endereço-imagem-nova);
     })
 
 })
