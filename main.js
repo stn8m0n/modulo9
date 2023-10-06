@@ -10,7 +10,10 @@ $(document).ready(function() {
     $('form').on('submit', function(e){
         e.preventDefault();
         const enderecoDaNovaImagem = $ ('endereço-imagem-nova').val();
-        console.log(endereço-imagem-nova);
+        console.log(enderecoDaNovaImagem);
+        const novoItem = $ ('<li></li>');
+        $(`<img src=" ${enderecoDaNovaImagem}" /`).appendTo(novoItem);
+        $(`<div class="overlay-imagem-link"`).appendTo(novoItem) ;
     })
 
 })
