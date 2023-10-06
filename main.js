@@ -9,10 +9,9 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e){
         e.preventDefault();
-        const enderecoDaNovaImagem = $ ('endereço-imagem-nova').val();
-        console.log(enderecoDaNovaImagem);
+        const enderecoDaNovaImagem = $('#endereço-imagem-nova').val();
         const novoItem = $ ('<li></li>');
-        $(`<img src=" ${enderecoDaNovaImagem}" /`).appendTo(novoItem);
+        $(`<img src="${enderecoDaNovaImagem}"/>`).appendTo(novoItem);
         $(`
             <div class="overlay-imagem-link">
                 <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
@@ -20,7 +19,9 @@ $(document).ready(function() {
                 </a>
             </div>
         `).appendTo(novoItem);
-        $(novoItem).appendTo('ul')
+        $(novoItem).appendTo('ul');
+        $(novoItem).fadeIn(5000);
+        $('#endereço-imagem-nova').val('')
     })
 
 })
