@@ -27,6 +27,11 @@ form {
     display: none;
 }
 
+form h2 {
+    margin-bottom: 16px;
+
+}
+
 input, button {
     padding: 8px;
 }
